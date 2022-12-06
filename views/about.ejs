@@ -1,0 +1,16 @@
+<%- include('partials/header'); -%>
+
+
+
+<h1>About</h1>
+
+
+<p> <%= aboutContent %></p>
+
+
+<% posts.forEach((post)=>{ %>
+   <h1><%post.title%> </h1> 
+    <p><%post.post%> </p>
+})
+
+<%- include('partials/footer'); -%>
